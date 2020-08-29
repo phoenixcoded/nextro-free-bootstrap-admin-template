@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/layout-vertical.html')
+<!-- [ Main Content ] start -->
+<section class="pc-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Form Elements</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
+                            <li class="breadcrumb-item">Form basic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="form-row">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-6">
+                <!-- Basic Inputs -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Basic Inputs</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <div class="media align-items-center">
+                                <i class="feather icon-alert-circle h2"></i>
+                                <div class="media-body ml-3">
+                                    Basic HTML form components with custom style.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <small>Your password must be between 8 and 30 characters.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect1">Select</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect2">Multiple select</label>
+                            <select multiple="" class="form-control" id="exampleSelect2">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                            <small>Hold shift or press ctrl for multi select.</small>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="exampleTextarea">Textarea</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mr-2">Submit</button>
+                        <button type="reset" class="btn btn-light">Reset</button>
+                    </div>
+                </div>
+                <!-- HTML Input Types -->
+                <div class="card ">
+                    <div class="card-header">
+                        <h5>HTML Input Types</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <div class="media align-items-center">
+                                <i class="feather icon-alert-circle h2"></i>
+                                <div class="media-body ml-3">
+                                    Here are the different input types you can use in HTML. Check more at <a href="https://www.w3schools.com/html/html_form_input_types.asp" rel="nofollow">W3Schools</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-text-input" class="col-form-label">Simple Input Text</label>
+                            <input class="form-control" type="text" value="John Doe" id="demo-text-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-number-input" class="col-form-label">Number</label>
+                            <input class="form-control" type="number" value="100" id="demo-number-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-tel-input" class="col-form-label">Telephone</label>
+                            <input class="form-control" type="tel" value="+918888888888" id="demo-tel-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-email-input" class="col-form-label">Email</label>
+                            <input class="form-control" type="email" value="demo@example.com" id="demo-email-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-password-input" class="col-form-label">Password</label>
+                            <input class="form-control" type="password" value="password123" id="demo-password-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-input-file" class="col-form-label">File</label>
+                            <input class="form-control" type="file" id="demo-input-file">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-multi-input-file" class="col-form-label">Multi Files</label>
+                            <input class="form-control" type="file" id="demo-multi-input-file" multiple>
+                            <small>Try selecting more than one file when browsing for files.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-URL-input" class="col-form-label">URL</label>
+                            <input class="form-control" type="url" value="https://validator.w3.org/" id="demo-URL-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-search-input" class="col-form-label">Search</label>
+                            <input class="form-control" type="search" value="Best Admin Template" id="demo-search-input">
+                            <small>a search field behaves like a regular text field</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-datetime-local" class="col-form-label">Date Time Local</label>
+                            <input class="form-control" type="datetime-local" value="2021-12-31T04:03:20" id="demo-datetime-local">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-date-only" class="col-form-label">Date only</label>
+                            <input class="form-control" type="date" value="2021-12-31" id="demo-date-only">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-time-only" class="col-form-label">Time only</label>
+                            <input class="form-control" type="time" value="04:03:20" id="demo-time-only">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-month-only" class="col-form-label">Month only</label>
+                            <input class="form-control" type="month" value="2021-12" id="demo-month-only">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-week-only" class="col-form-label">Week only</label>
+                            <input class="form-control" type="week" value="2021-W41" id="demo-week-only">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-color-input" class="col-form-label">Color</label>
+                            <input class="form-control" type="color" value="#7267EF" id="demo-color-input">
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="demo-range-input" class="col-form-label">Range</label>
+                            <input class="form-control" type="range" min="0" max="50" id="demo-range-input">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                      <h5>Sizing</h5>
+                  </div>
+                  <div class="card-body">
+                      <div class="alert alert-primary">
+                          <div class="media align-items-center">
+                              <i class="feather icon-alert-circle h2"></i>
+                              <div class="media-body ml-3">
+                                  Input sizing using <code>.form-control-lg</code> and <code>.form-control-sm</code> class.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                          <small><code>.form-control-sm</code></small>
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Default Input">
+                          <small><code>.form-control</code></small>
+                      </div>
+                      <div class="form-group">
+                          <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+                          <small><code>.form-control-lg</code></small>
+                      </div>
+                      <hr>
+                          <div class="form-group">
+                              <label>Large select</label>
+                              <select class="form-control form-control-lg">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label>Default select</label>
+                              <select class="form-control">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                              </select>
+                          </div>
+                          <div class="form-group mb-0">
+                              <label>Small select</label>
+                              <select class="form-control form-control-sm">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                              </select>
+                          </div>
+
+                        <div class="card-footer">
+                            <button class="btn btn-primary mr-2">Submit</button>
+                            <button type="reset" class="btn btn-light">Reset</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Input Attributes </h5>
+                    </div>
+                    <form>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <div class="media align-items-center">
+                                <i class="feather icon-alert-circle h2"></i>
+                                <div class="media-body ml-3">
+                                    Examples of <code>autofocus, value, readonly, disabled, required</code> attributes in Input .
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <label for="example-auto-focus">Auto focus</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="example-auto-focus" autofocus>
+                                <small>autofocus on page load</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-value">Value</label>
+                                <input type="text" class="form-control" value="John Doe" >
+                            </div>
+                            <div class="form-group">
+                                <label for="example-required">Required</label>
+                                <input type="text" class="form-control" id="example-required" id="example-required" required>
+                                <small>Submit the form to see it in action</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-read-only">Readonly</label>
+                                <input type="text" class="form-control" value="demo@email.com" id="example-read-only" readonly>
+                                <small>The input <code>readonly</code> attribute specifies that an input field is read-only</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-disabled">Disabled</label>
+                                <input type="text" class="form-control" value="26" id="example-disabled" disabled>
+                                <small>The value of a <code>disabled</code> input field will not be sent when submitting the form</small>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label for="example-disabled-select">Disabled select</label>
+                                <select class="form-control" id="example-disabled-select" disabled>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mr-2">Submit</button>
+                        <button type="reset" class="btn btn-light">Reset</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Advance Input attributes </h5>
+                    </div>
+                    <form>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <div class="media align-items-center">
+                                <i class="feather icon-alert-circle h2"></i>
+                                <div class="media-body ml-3">
+                                    Examples of <code>maxlength, min, max, step, pattern, list</code> attributes of Input. <br/> Submit form for checkout attribute functionality.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-max-length">Max Length</label>
+                            <input type="text" class="form-control" placeholder="Enter PIN" id="example-max-length" maxlength="4">
+                            <small>maxlength set to 4 characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-datemax">Date</label>
+                            <input type="date" class="form-control" id="example-datemax" max="1979-12-31">
+                            <small>Enter a date before 1980-01-01</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-datemin">Date</label>
+                            <input type="date" class="form-control" id="example-datemin" min="2000-01-02">
+                            <small>Enter a date after 2000-01-01</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-quantity">Quantity</label>
+                            <input type="number" class="form-control" id="example-quantity" min="1" max="5">
+                            <small>i.e.between 1 and 5</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-steps">Points</label>
+                            <input type="number" class="form-control" id="example-steps" step="3" value="1">
+                            <small>step set to 3</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="example-country-code">Country code</label>
+                            <input type="text" class="form-control" id="example-country-code" pattern="[A-Za-z]{3}" title="Three letter country code">
+                            <small><code>pattern</code> attribute - three letter country code</small>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="example-data-list">List (Browsers)</label>
+                            <input type="text" class="form-control" id="example-data-list" list="browsers">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                            <small>The datalist tag is not supported in Safari 12.0 (or earlier).</small>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button type="reset" class="btn btn-light">Reset</button>
+                    </div>
+                  </form>
+                </div>
+            <!-- [ form-element ] end -->
+
+        </div>
+        <!-- [ Main Content ] end -->
+
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+@@include('./layouts/footer-bottom-link.html')</body>
+
+</html>

@@ -1,0 +1,59 @@
+// ============================
+//     dropdown css start
+// ============================
+
+.dropdown-toggle {
+    &.arrow-none {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.dropdown-menu {
+    padding: 15px 0;
+    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+    border: none;
+    border-radius: 2px;
+}
+
+.pc-header {
+    .dropdown-menu {
+        animation: 0.4s ease-in-out 0s normal forwards 1 fadein;
+    }
+}
+@keyframes fadein {
+    from {
+        transform: translate3d(0, 8px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.dropdown-item {
+    &:focus,
+    &:hover {}
+}
+
+.dropdown {
+    .dropdown-item {
+        padding: 10px 25px;
+
+        i {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            fill: #f2f2f2;
+        }
+    }
+}
+// dropdown css end

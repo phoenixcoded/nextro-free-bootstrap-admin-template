@@ -1,0 +1,10 @@
+// ============================
+//     Badge css start
+// ============================
+@each $color, $value in $theme-colors {
+    .badge-light-#{$color} {
+        background: theme-color-level($color, $soft-bg-level);
+        color: $value;
+        border-color: theme-color-level($color, $soft-bg-level);
+    }
+}

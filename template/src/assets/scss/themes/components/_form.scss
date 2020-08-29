@@ -1,0 +1,557 @@
+// ============================
+//     Form css start
+// ============================
+.form-group label{
+    font-weight: 500;
+}
+.input-group-text svg{
+    width: 18px;
+    height: 18px;
+}
+
+.form-control{
+    &[type="file"]{
+        padding: 0.42rem 1rem;
+    }
+}
+
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child){
+    border-right: none;
+}
+// v1 Start
+.form-v1{
+
+    .form-label-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .form-label-group > input,
+    .form-label-group > label {
+      height: 3.125rem;
+      padding: .75rem;
+    }
+
+    .form-label-group > label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      color: #495057;
+      pointer-events: none;
+      cursor: text; /* Match the input under the label */
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      transition: all .1s ease-in-out;
+    }
+
+    .form-label-group input::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-moz-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:not(:-moz-placeholder-shown) {
+      padding-top: 1.25rem;
+      padding-bottom: .25rem;
+    }
+
+    .form-label-group input:not(:placeholder-shown) {
+      padding-top: 1.25rem;
+      padding-bottom: .25rem;
+    }
+
+    .form-label-group input:not(:-moz-placeholder-shown) ~ label {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .form-label-group input:not(:placeholder-shown) ~ label {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      font-size: 12px;
+      color: #777;
+    }
+
+}
+// v1 end
+// v2 Start
+.form-v2{
+    .form-group{
+        position: relative;
+        &.fill{
+            .floating-label{
+                opacity: 0.6;
+                font-size: 85%;
+            }
+        }
+    }
+    .floating-label{
+        position: absolute;
+        top: 6px;
+        left: 16px;
+        transition: all .3s ease-in-out;
+    }
+    .form-control{
+        height: auto;
+        padding-top: 30px;
+    }
+}
+// v2 end
+// Date picker start
+
+.datepicker {
+    width: 265px;
+    padding: 10px;
+
+    &.dropdown-menu {
+        padding: 10px;
+    }
+
+    &.datepicker-orient-top {
+        margin-top: 8px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td,
+    th {
+        font-weight: regular;
+        width: 35px;
+        height: 35px;
+    }
+
+    thead {
+        th {
+            color: $headings-color;
+
+            &.datepicker-switch,
+            &.next,
+            &.prev {
+                font-weight: 500;
+                color: $body-color;
+
+                i {
+                    font-size: 1.2rem;
+                    color: $body-color;
+
+                    &:before {
+                        line-height: 0;
+                        vertical-align: middle;
+                    }
+                }
+
+                &:hover {
+                    background: $body-bg !important;
+                }
+            }
+
+            &.dow {
+                color: $body-color;
+                font-weight: 500;
+            }
+        }
+    }
+
+    tbody {
+        tr > td {
+            &.day {
+                color: $body-color;
+
+                &:hover {
+                    background: $body-bg;
+                    color: $body-color;
+                }
+
+                &.old {
+                    color: $body-color;
+                }
+
+                &.new {
+                    color: $body-color;
+                }
+
+                &.active,
+                &.active:hover,
+                &.selected,
+                &.selected:hover {
+                    background: $primary;
+                    color: #fff;
+                }
+
+                &.today {
+                    position: relative;
+                    background: $primary !important;
+                    color: #fff !important;
+
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        border: solid transparent;
+                        border-width: 0 0 7px 7px;
+                        border-bottom-color: #ffffff;
+                        border-top-color: $body-color;
+                        position: absolute;
+                        bottom: 4px;
+                        right: 4px;
+                    }
+                }
+
+                &.range {
+                    background: $headings-color;
+                }
+            }
+
+            span.hour,
+            span.minute,
+            span.month,
+            span.year {
+                color: $body-color;
+
+                &:hover {
+                    background: $body-bg;
+                }
+
+                &.active,
+                &.active.focused:hover,
+                &.active:hover,
+                &.focused,
+                &.focused:hover {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    tfoot {
+        tr > th {
+            &.clear,
+            &.today {
+                font-weight: 500;
+
+                &:hover {
+                    background: $body-bg;
+                }
+            }
+        }
+    }
+
+    &.datepicker-inline {
+        border: 1px solid $border-color;
+    }
+}
+// Date picker end
+// Time picker start
+
+.bootstrap-timepicker-widget {
+    left: auto;
+    width: 175px;
+
+    .bootstrap-timepicker-hour,
+    .bootstrap-timepicker-meridian,
+    .bootstrap-timepicker-minute,
+    .bootstrap-timepicker-second {
+        border: none;
+        box-shadow: none;
+    }
+
+    table td {
+        > a {
+            border: 0;
+
+            i {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.bootstrap-timepicker-widget {
+    .bootstrap-timepicker-hour,
+    .bootstrap-timepicker-meridian,
+    .bootstrap-timepicker-minute,
+    .bootstrap-timepicker-second {
+        color: $headings-color;
+    }
+
+    table td > a {
+        &:hover {
+            background: $body-bg;
+        }
+    }
+}
+// Time picker end
+// tagify start
+
+.tagify__tag {
+    --tag-bg: #{$body-bg};
+    --tag-hover: #{transparentize($primary,0.7)};
+    --tag-remove-bg: #{transparentize($danger,0.7)};
+    --tag-remove-btn-bg--hover: #{$danger};
+    @each $color, $value in $theme-colors {
+        &.tagify__tag--#{$color} {
+            --tag-bg: #{transparentize($value, 0.8)};
+
+            div {
+                .tagify__tag-text {
+                    color: $value;
+                }
+            }
+        }
+    }
+}
+// tagify end
+// switch start
+
+.bootstrap-switch {
+    border-color: $border-color;
+
+    .bootstrap-switch-handle-off,
+    .bootstrap-switch-handle-on {
+        &.bootstrap-switch-default {
+            background: $body-bg;
+        }
+        @each $color, $value in $theme-colors {
+            &.bootstrap-switch-#{$color} {
+                color: #fff;
+                background: $value;
+            }
+        }
+    }
+}
+// switch end
+// bootstrap-select start
+
+.bootstrap-select {
+    > .dropdown-toggle.bs-placeholder.btn[class*="btn-"]:not(.btn-light) {
+        color: #fff;
+    }
+}
+// bootstrap-select end
+// typeahead start
+
+.typeahead .twitter-typeahead {
+    display: block !important;
+}
+
+.tt-menu {
+    padding: 10px 0;
+    font-size: $font-size-base;
+    background: #fff;
+    min-width: 10rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    .tt-suggestion {
+        padding: 4px 20px;
+        border-radius: 2px;
+
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: transparentize($primary,0.97);
+            color: $primary;
+        }
+    }
+}
+// typeahead end
+// typeahead start
+
+.sticky-action {
+    .card-header {
+        background: #fff;
+        z-index: 1;
+    }
+
+    &.sticky {
+        .card-header {
+            top: calc(#{$topbar-height} + 55px);
+            position: fixed;
+            box-shadow: 0 1px 15px 1px rgba(57, 82, 107, 0.08);
+            left: calc(#{$sidebar-width} + 25px);
+            right: 25px;
+        }
+    }
+}
+// typeahead end
+// dropzone start
+// Base
+
+.dropzone {
+    min-height: auto;
+}
+
+.dropzone {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px dashed $border-color;
+    border-radius: $border-radius;
+
+    .dropzone-msg-title {
+        color: $body-color;
+        margin: 0 0 5px;
+        padding: 0;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .dropzone-msg-desc {
+        color: $body-color;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .dz-preview {
+        .dz-image {
+            border-radius: $border-radius;
+        }
+    }
+    // State colors
+    @each $color, $value in $theme-colors {
+        &.dropzone-#{$color} {
+            border-color: $value;
+        }
+    }
+}
+// Multipe upload
+.dz-started {
+    .dropzone-msg {
+        display: none;
+    }
+}
+
+.dropzone-multi {
+    border: 0;
+    padding: 0;
+
+    .dz-message {
+        display: none;
+    }
+
+    .dropzone-panel {
+        .dropzone-remove-all,
+        .dropzone-upload {
+            display: none;
+        }
+    }
+
+    .dropzone-item {
+        background: $body-bg;
+        border-radius: $border-radius;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 14px;
+
+        .dropzone-progress {
+            width: 20%;
+
+            .progress {
+                height: 0.5rem;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .dropzone-file {
+            .dropzone-filename {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: $body-color;
+                text-overflow: ellipsis;
+                margin-right: 0.5rem;
+
+                b {
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: $body-color;
+                }
+            }
+
+            .dropzone-error {
+                margin-top: 0.25rem;
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: $danger;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .dropzone-toolbar {
+            margin-left: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+
+            .dropzone-cancel,
+            .dropzone-delete,
+            .dropzone-start {
+                height: 25px;
+                width: 25px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                i {
+                    font-size: 0.8rem;
+                    color: $headings-color;
+                }
+
+                &:hover {
+                    i {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .dropzone-start {
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+// dropzone end
+// uppy start
+.uppy-Dashboard--modal {
+    z-index: 1030;
+}
+.uppy-DragDrop--is-dragdrop-supported{
+    border-color: $body-bg;
+}
+.pc-uppy-thumbnail-container{
+    .pc-uppy-thumbnail{
+        img{
+            width: 100px;
+        }
+    }
+}
+// uppy end
+.slider-selection{
+    box-shadow: none;
+}
+// ============================
+// Form css end
+// ============================

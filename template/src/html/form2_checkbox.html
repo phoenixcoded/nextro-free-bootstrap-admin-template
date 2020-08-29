@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/layout-vertical.html')
+<!-- [ Main Content ] start -->
+<section class="pc-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Checkbox</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
+                            <li class="breadcrumb-item">Checkbox</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Basic Checkbox</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Checkboxes</label>
+                                <div class="col-9">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                      <label class="form-check-label" for="defaultCheck1">
+                                        Default checkbox
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
+                                      <label class="form-check-label" for="defaultCheck2">
+                                        Checked checkbox
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" disabled>
+                                      <label class="form-check-label" for="defaultCheck3">
+                                        Disabled checkbox
+                                      </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Inline</label>
+                                <div class="col-9">
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
+                                    <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" disabled>
+                                    <label class="form-check-label" for="inlineCheckbox4">4 (disabled)</label>
+                                  </div>
+                                  <small class="form-text"><code>.form-check-inline</code> to any <code>.form-check</code></small>
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Without Labels</label>
+                                <div class="col-9">
+                                  <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                  </div>
+                                  <small class="form-text">Add <code>.position-static</code> to inputs within <code>.form-check</code> that don’t have any label text</small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="card-header">
+                          <h5>Color Options</h5>
+                      </div>
+                      <div class="card-body">
+                          <form>
+                              <div class="form-group">
+                                  <label>Outline Checkboxes</label>
+                                  <div class="custom-control custom-checkbox checkbox-outline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefout1">
+                                      <label class="custom-control-label" for="customCheckdefout1">Default</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox checkbox-outline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefout2">
+                                      <label class="custom-control-label" for="customCheckdefout2">Option 2</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox checkbox-outline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefout3" disabled>
+                                      <label class="custom-control-label" for="customCheckdefout3">Disabled</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox checkbox-outline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefout4" checked>
+                                      <label class="custom-control-label" for="customCheckdefout4">Checked</label>
+                                  </div>
+                                  <small class="form-text text-muted">Some help text goes here</small>
+                              </div>
+
+                              <div class="form-group">
+                                  <label>Color States</label>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckc1" checked>
+                                      <label class="custom-control-label" for="customCheckc1">primary</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-secondary" id="customCheckc2" checked>
+                                      <label class="custom-control-label" for="customCheckc2">secondary</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-success" id="customCheckc3" checked>
+                                      <label class="custom-control-label" for="customCheckc3">success</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-danger" id="customCheckc4" checked>
+                                      <label class="custom-control-label" for="customCheckc4">danger</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-warning" id="customCheckc5" checked>
+                                      <label class="custom-control-label" for="customCheckc5">warning</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-info" id="customCheckc6" checked>
+                                      <label class="custom-control-label" for="customCheckc6">info</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-dark" id="customCheckc7" checked>
+                                      <label class="custom-control-label" for="customCheckc7">dark</label>
+                                  </div>
+                                  <small class="form-text text-muted">Some help text goes here</small>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Custom Checkbox</h5>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group row">
+                              <label class="col-3 col-form-label">Checkboxes</label>
+                              <div class="col-9">
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-secondary" id="customCheckdefh1">
+                                      <label class="custom-control-label" for="customCheckdefh1">Default checkbox</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefh2" checked>
+                                      <label class="custom-control-label" for="customCheckdefh2">Checked checkbox</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckdefh4" disabled>
+                                      <label class="custom-control-label" for="customCheckdefh4">Disabled checkbox</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-3 col-form-label">Inline</label>
+                              <div class="col-9">
+                                  <div class="custom-control custom-checkbox custom-control-inline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckinlh1">
+                                      <label class="custom-control-label" for="customCheckinlh1">1</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox custom-control-inline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckinlh2">
+                                      <label class="custom-control-label" for="customCheckinlh2">2</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox custom-control-inline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckinlh3" checked>
+                                      <label class="custom-control-label" for="customCheckinlh3">3</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox custom-control-inline">
+                                      <input type="checkbox" class="custom-control-input input-primary" id="customCheckinlh4" disabled>
+                                      <label class="custom-control-label" for="customCheckinlh4">4 (disabled)</label>
+                                  </div>
+                                  <small class="form-text text-muted">Add <code>.custom-control-inline</code> to any <code>.custom-control</code></small>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-3 col-form-label">Indeterminate</label>
+                              <div class="col-9">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckint1">
+                                    <label class="custom-control-label" for="customCheckint1">Check this custom checkbox</label>
+                                  </div>
+                                  <small class="form-text text-muted"><code>$('.your-checkbox').prop('indeterminate', true)</code></small>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+<script>
+$('#customCheckint1').prop('indeterminate', true)
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

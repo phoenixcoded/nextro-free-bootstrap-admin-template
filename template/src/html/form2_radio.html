@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/layout-vertical.html')
+<!-- [ Main Content ] start -->
+<section class="pc-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Radio</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
+                            <li class="breadcrumb-item">Radio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Default Radio</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Default Radio</label>
+                                <div class="">
+                                    <input type="radio" name="radio1" class="" id="customCheckdef1">
+                                    <label class="" for="customCheckdef1">Default</label>
+                                </div>
+                                <div class="">
+                                    <input type="radio" name="radio1" class="" id="customCheckdef2">
+                                    <label class="" for="customCheckdef2">Option 2</label>
+                                </div>
+                                <div class="">
+                                    <input type="radio" name="radio1" class="" id="customCheckdef3" disabled>
+                                    <label class="" for="customCheckdef3">Disabled</label>
+                                </div>
+                                <div class="">
+                                    <input type="radio" name="radio1" class="" id="customCheckdef4" checked>
+                                    <label class="" for="customCheckdef4">Checked</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">Inline Radio</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio2" class="form-check-input" id="customCheckinl1">
+                                    <label class="form-check-label" for="customCheckinl1">Inline 1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio2" class="form-check-input" id="customCheckinl2">
+                                    <label class="form-check-label" for="customCheckinl2">Inline 2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio2" class="form-check-input" id="customCheckinl3">
+                                    <label class="form-check-label" for="customCheckinl3">Inline 3</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">Inline Radio Checked State</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio3" class="form-check-input" id="customCheckinl4" checked>
+                                    <label class="form-check-label" for="customCheckinl4">Inline 1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio3" class="form-check-input" id="customCheckinl5">
+                                    <label class="form-check-label" for="customCheckinl5">Inline 2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="radio3" class="form-check-input" id="customCheckinl6" checked>
+                                    <label class="form-check-label" for="customCheckinl6">Inline 3</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Horizontal Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Radio</label>
+                                <div class="col-9">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" name="radio4" class="custom-control-input input-primary" id="customCheckdefh1">
+                                        <label class="custom-control-label" for="customCheckdefh1">Default</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" name="radio4" class="custom-control-input input-primary" id="customCheckdefh2">
+                                        <label class="custom-control-label" for="customCheckdefh2">Option 2</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" name="radio4" class="custom-control-input input-primary" id="customCheckdefh3" disabled>
+                                        <label class="custom-control-label" for="customCheckdefh3">Disabled</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" name="radio4" class="custom-control-input input-primary" id="customCheckdefh4" checked>
+                                        <label class="custom-control-label" for="customCheckdefh4">Checked</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Inline Radio</label>
+                                <div class="col-9">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio5" class="custom-control-input input-primary" id="customCheckinlh1">
+                                        <label class="custom-control-label" for="customCheckinlh1">Inline 1</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio5" class="custom-control-input input-primary" id="customCheckinlh2">
+                                        <label class="custom-control-label" for="customCheckinlh2">Inline 2</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio5" class="custom-control-input input-primary" id="customCheckinlh3">
+                                        <label class="custom-control-label" for="customCheckinlh3">Inline 3</label>
+                                    </div>
+                                    <small class="form-text text-muted">Some help text goes here</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Inline Radio State</label>
+                                <div class="col-9">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio6" class="custom-control-input input-primary" id="customCheckinlh4" checked>
+                                        <label class="custom-control-label" for="customCheckinlh4">Inline 1</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio6" class="custom-control-input input-primary" id="customCheckinlh5">
+                                        <label class="custom-control-label" for="customCheckinlh5">Inline 2</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="radio6" class="custom-control-input input-primary" id="customCheckinlh6" checked>
+                                        <label class="custom-control-label" for="customCheckinlh6">Inline 3</label>
+                                    </div>
+                                    <small class="form-text text-muted">Some help text goes here</small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Basic Radio</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Default Radio</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio1" class="custom-control-input input-primary" id="customCheckdef1">
+                                    <label class="custom-control-label" for="customCheckdef1">Default</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio1" class="custom-control-input input-primary" id="customCheckdef2">
+                                    <label class="custom-control-label" for="customCheckdef2">Option 2</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio1" class="custom-control-input input-primary" id="customCheckdef3" disabled>
+                                    <label class="custom-control-label" for="customCheckdef3">Disabled</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio1" class="custom-control-input input-primary" id="customCheckdef4" checked>
+                                    <label class="custom-control-label" for="customCheckdef4">Checked</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">Inline Radio</label>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio2" class="custom-control-input input-primary" id="customCheckinl1">
+                                    <label class="custom-control-label" for="customCheckinl1">Inline 1</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio2" class="custom-control-input input-primary" id="customCheckinl2">
+                                    <label class="custom-control-label" for="customCheckinl2">Inline 2</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio2" class="custom-control-input input-primary" id="customCheckinl3">
+                                    <label class="custom-control-label" for="customCheckinl3">Inline 3</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">Inline Radio Checked State</label>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio3" class="custom-control-input input-primary" id="customCheckinl4" checked>
+                                    <label class="custom-control-label" for="customCheckinl4">Inline 1</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio3" class="custom-control-input input-primary" id="customCheckinl5">
+                                    <label class="custom-control-label" for="customCheckinl5">Inline 2</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="radio3" class="custom-control-input input-primary" id="customCheckinl6" checked>
+                                    <label class="custom-control-label" for="customCheckinl6">Inline 3</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Color Options</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="d-block">Default Radio</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio7" class="custom-control-input input-primary" id="customCheckdefcol1">
+                                    <label class="custom-control-label" for="customCheckdefcol1">Default</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio7" class="custom-control-input input-primary" id="customCheckdefcol2">
+                                    <label class="custom-control-label" for="customCheckdefcol2">Option 2</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio7" class="custom-control-input input-primary" id="customCheckdefcol3" disabled>
+                                    <label class="custom-control-label" for="customCheckdefcol3">Disabled</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio7" class="custom-control-input input-primary" id="customCheckdefcol4" checked>
+                                    <label class="custom-control-label" for="customCheckdefcol4">Checked</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Outline Radio</label>
+                                <div class="custom-control custom-radio radio-outline">
+                                    <input type="radio" name="radio8" class="custom-control-input input-primary" id="customCheckdefout1">
+                                    <label class="custom-control-label" for="customCheckdefout1">Default</label>
+                                </div>
+                                <div class="custom-control custom-radio radio-outline">
+                                    <input type="radio" name="radio8" class="custom-control-input input-primary" id="customCheckdefout2">
+                                    <label class="custom-control-label" for="customCheckdefout2">Option 2</label>
+                                </div>
+                                <div class="custom-control custom-radio radio-outline">
+                                    <input type="radio" name="radio8" class="custom-control-input input-primary" id="customCheckdefout3" disabled>
+                                    <label class="custom-control-label" for="customCheckdefout3">Disabled</label>
+                                </div>
+                                <div class="custom-control custom-radio radio-outline">
+                                    <input type="radio" name="radio8" class="custom-control-input input-primary" id="customCheckdefout4" checked>
+                                    <label class="custom-control-label" for="customCheckdefout4">Checked</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Color States</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-primary" id="customCheckc1" checked>
+                                    <label class="custom-control-label" for="customCheckc1">primary</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-secondary" id="customCheckc2" checked>
+                                    <label class="custom-control-label" for="customCheckc2">secondary</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-success" id="customCheckc3" checked>
+                                    <label class="custom-control-label" for="customCheckc3">success</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-danger" id="customCheckc4" checked>
+                                    <label class="custom-control-label" for="customCheckc4">danger</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-warning" id="customCheckc5" checked>
+                                    <label class="custom-control-label" for="customCheckc5">warning</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-info" id="customCheckc6" checked>
+                                    <label class="custom-control-label" for="customCheckc6">info</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radio9" class="custom-control-input input-dark" id="customCheckc7" checked>
+                                    <label class="custom-control-label" for="customCheckc7">dark</label>
+                                </div>
+                                <small class="form-text text-muted">Some help text goes here</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>
