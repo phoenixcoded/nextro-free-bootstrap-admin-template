@@ -28,7 +28,7 @@ Check out live preview of Nextro Able lite version & download it.
 
 #### Download
 
- - [Download from Github](https://github.com/phoenixcoded/flat-able-free-bootstrap-admin-template.git)
+ - [Download from Github](https://github.com/phoenixcoded/nextro-free-bootstrap-admin-template.git)
  - [Download from phoenixcoded](http://html.phoenixcoded.net/nextro-able/bootstrap/index.html) & receive important notification instantly in your maiL.
  
  ## Premium Version Preview & Download
@@ -60,7 +60,7 @@ Nextro Able Admin Template is available to purchase. Visit its numerous demos an
 
 Clone from Github 
 ```
-git clone https://github.com/phoenixcoded/flat-able-free-bootstrap-admin-template.git
+git clone https://github.com/phoenixcoded/nextro-free-bootstrap-admin-template.git
 ```
 *no other dependencies required to run the 	Nextro Able Template*
 
@@ -75,7 +75,7 @@ Nextro Able Lite version documentation cover in its Pro version documentation - 
  
 ## Directory Structure
 ```
-flat-able/
+nextro-able/
 ├── dist/
     ├── assets/
     |   ├── css/
@@ -144,10 +144,6 @@ Please read [CONTRIBUTING.md](https://github.com/codedthemes/datta-able-bootstra
 ## Issues
 
 Please generate Github issue if you found bug in any version. We are try to be responsive to resolve the issue.
-
-## License
-
- - Licensed cover under [MIT](https://github.com/phoenixcoded/flat-able-free-bootstrap-admin-template/blob/master/LICENSE.md)
 
 ## Other Dashboard Products
 
